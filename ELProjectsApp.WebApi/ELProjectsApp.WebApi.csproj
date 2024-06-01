@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ELProjectsApp.Modules.Organizations.Infrastructure\ELProjectsApp.Modules.Organizations.Infrastructure.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Modules.Organizations.Presentation\ELProjectsApp.Modules.Organizations.Presentation.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Modules.Projects.Infrastructure\ELProjectsApp.Modules.Projects.Infrastructure.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Modules.Projects.Presentation\ELProjectsApp.Modules.Projects.Presentation.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Modules.Users.Infrastructure\ELProjectsApp.Modules.Users.Infrastructure.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Modules.Users.Presentation\ELProjectsApp.Modules.Users.Presentation.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Shared.Abstractions\ELProjectsApp.Shared.Abstractions.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Shared.Infrastructure\ELProjectsApp.Shared.Infrastructure.csproj" />
+    <ProjectReference Include="..\ELProjectsApp.Shared.Kernel\ELProjectsApp.Shared.Kernel.csproj" />
+  </ItemGroup>
+
+</Project>

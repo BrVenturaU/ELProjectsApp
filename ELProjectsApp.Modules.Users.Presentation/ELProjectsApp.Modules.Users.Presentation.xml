@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ELProjectsApp.Modules.Users.Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:ELProjectsApp.Modules.Users.Presentation.Controllers.UsersController.RegisterUser(ELProjectsApp.Modules.Users.Presentation.Dtos.UserCreationRequest)">
+            <summary>
+            Registers a new user.
+            </summary>
+            <param name="userCreationDto">User information to register in the platform.</param>
+            <response code="200">A message indicating the user was created.</response>
+            <response code="500">A message indicating something was wrong with the user creation.</response>
+            <returns>A message indicating user successfully created.</returns>
+        </member>
+        <member name="M:ELProjectsApp.Modules.Users.Presentation.Controllers.UsersController.Login(ELProjectsApp.Shared.Kernel.Dtos.Users.UserAuthenticationDto)">
+            <summary>
+            Verify user credentials to create a JWT token.
+            </summary>
+            <param name="userAuthentication">User information to log it in.</param>
+            <returns>Access token and auth information.</returns>
+            <response code="200">An object with the authentication information.</response>
+            <response code="400">A message indicating invalid credentials.</response>
+        </member>
+    </members>
+</doc>

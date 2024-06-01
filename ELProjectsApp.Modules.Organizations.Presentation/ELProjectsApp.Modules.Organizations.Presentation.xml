@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ELProjectsApp.Modules.Organizations.Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:ELProjectsApp.Modules.Organizations.Presentation.Controllers.OrganizationsController.GetOrganizations">
+            <summary>
+            Get organizations belonging to the currently user session.
+            </summary>
+            <returns>A list of organizations.</returns>
+            <response code="200">An object with all the organizations belonging to the user.</response>
+        </member>
+        <member name="M:ELProjectsApp.Modules.Organizations.Presentation.Controllers.OrganizationsController.GetOrganizationById(System.Guid)">
+            <summary>
+            Get an user organization by identifier.
+            </summary>
+            <param name="id">The organization identifier.</param>
+            <returns>Organization information if encountered.</returns>
+            <response code="200">An object related to the organization information.</response>
+            <response code="404">A message indicating the organization was not found.</response>
+        </member>
+        <member name="M:ELProjectsApp.Modules.Organizations.Presentation.Controllers.OrganizationsController.CreateOrganization(ELProjectsApp.Modules.Organizations.Presentation.Requests.OrganizationCreationRequest)">
+            <summary>
+            Create an organization assigned to the current user in session.
+            </summary>
+            <param name="creationRequest">Organization information to be added.</param>
+            <returns>The organization created.</returns>
+            <response code="201">An object indicating the creation was sucessfully.</response>
+        </member>
+    </members>
+</doc>

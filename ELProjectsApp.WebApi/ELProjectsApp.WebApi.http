@@ -1,0 +1,6 @@
+@ELProjectsApp.WebApi_HostAddress = http://localhost:5009
+
+GET {{ELProjectsApp.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

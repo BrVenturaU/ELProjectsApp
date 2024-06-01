@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ELProjectsApp.Modules.Projects.Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:ELProjectsApp.Modules.Projects.Presentation.Controllers.ProjectsController.GetProjects(System.Guid)">
+            <summary>
+            Get all the tenant projects.
+            </summary>
+            <param name="slugTenant">The tenant slug identifier.</param>
+            <returns>A list of all projects belonging to the tenant.</returns>
+        </member>
+        <member name="M:ELProjectsApp.Modules.Projects.Presentation.Controllers.ProjectsController.GetProject(System.Guid,System.Guid)">
+            <summary>
+            Get a tenant project by identifier.
+            </summary>
+            <param name="id">The project identifier.</param>
+            <param name="slugTenant">The tenant slug identifier.</param>
+            <returns>Project information if encountered.</returns>
+            <response code="200">An object related to the project information.</response>
+            <response code="404">A message indicating the project was not found.</response>
+        </member>
+        <member name="M:ELProjectsApp.Modules.Projects.Presentation.Controllers.ProjectsController.CreateProject(System.Guid,ELProjectsApp.Modules.Projects.Presentation.Requests.ProjectCreationRequest)">
+            <summary>
+            Create a tenant project.
+            </summary>
+            <param name="projectCreation">Project information to be added.</param>
+            <param name="slugTenant">The tenant slug identifier.</param>
+            <returns>The project created.</returns>
+            <response code="201">An object indicating the creation was sucessfully.</response>
+        </member>
+    </members>
+</doc>
